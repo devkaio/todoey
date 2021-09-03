@@ -5,7 +5,10 @@ class TaskTile extends StatelessWidget {
   final String? taskTitle;
   final Function(bool?)? checkboxCallback;
 
-  TaskTile({required this.isChecked, this.taskTitle, this.checkboxCallback});
+  TaskTile(
+      {required this.isChecked,
+      required this.taskTitle,
+      this.checkboxCallback});
 
   @override
   Widget build(BuildContext context) {
